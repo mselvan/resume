@@ -2615,3 +2615,39 @@ dialog :link {
 #openFile {
   display: none;
 }
+
+#download {
+/*  position: fixed;
+  top: 50px;
+  left: 50%;*/
+  display: inline-block;
+
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 5px;
+  padding: 10px;
+
+  color: white;
+  text-align: center;
+  text-decoration: none;
+
+  background-color: #eee;
+  background-image: url(images/gv-toolbarButton-download.svg);
+  background-position: center;
+  background-size: 75% 75%;
+  background-repeat: no-repeat;
+  background-origin: padding-box;
+
+  transition-duration: 0.4s;
+}
+
+#download:hover {
+  background-color: #ccc;
+}
+
+#download::before {
+  display: none;
+}
+
+.toolbarButton, .secondaryToolbarButton {
+  cursor: pointer;
+}
