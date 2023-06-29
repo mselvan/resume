@@ -2612,8 +2612,8 @@ dialog :link {
 * Additions
 */
 
-#openFile {
-  display: none;
+#openFile, #secondaryOpenFile {
+  display: none !important;
 }
 
 #download {
