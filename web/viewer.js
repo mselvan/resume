@@ -12326,7 +12326,7 @@ class BasePreferences {
     "spreadModeOnLoad": -1,
     "textLayerMode": 1,
     "useOnlyCssZoom": false,
-    "viewerCssTheme": 2,
+    "viewerCssTheme": 0,
     "viewOnLoad": 0,
     "disableAutoFetch": false,
     "disableFontFace": false,
