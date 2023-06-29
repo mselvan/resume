@@ -12308,7 +12308,7 @@ class BasePreferences {
     "annotationMode": 2,
     "cursorToolOnLoad": 0,
     "defaultZoomDelay": 400,
-    "defaultZoomValue": "100",
+    "defaultZoomValue": "125",
     "disablePageLabels": false,
     "enableFloatingToolbar": false,
     "enablePermissions": false,
