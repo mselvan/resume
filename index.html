@@ -18,9 +18,14 @@
       overflow: auto;
     }
   </style>
-
 </head>
   <body>
-    <iframe src="web/viewer.html" width="100%" height="100%"></iframe>
+    <iframe id="viewerFrame" src="web/viewer.html" width="100%" height="100%"></iframe>
   </body>
+  <script type="application/javascript">
+    const currentQueryString = window.location.search;
+    console.log(currentQueryString)
+    const iframe = document.getElementById('viewerFrame');
+    iframe.src = "web/viewer.html" + currentQueryString;
+  </script>
 </html>

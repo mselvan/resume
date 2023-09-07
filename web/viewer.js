@@ -1617,7 +1617,9 @@ function webViewerInitialized() {
   let file;
   const queryString = document.location.search.substring(1);
   const params = (0, _ui_utils.parseQueryString)(queryString);
-  file = params.get("file") ?? _app_options.AppOptions.get("defaultUrl");
+  console.log(params.get("minimal"))
+  file = params.get("mode") === "minimal" ? _app_options.AppOptions.get("minimalPdfUrl") : _app_options.AppOptions.get("comprehensivePdfUrl");
+  console.log(file)
   validateFileURL(file);
   const fileInput = appConfig.openFileInput;
   fileInput.value = null;
@@ -3208,9 +3210,13 @@ const defaultOptions = {
   }
 };
 {
-  defaultOptions.defaultUrl = {
+  defaultOptions.comprehensivePdfUrl = {
     value: "../mani-resume.pdf",
     kind: OptionKind.VIEWER
+  };
+  defaultOptions.minimalPdfUrl = {
+     value: "../ms-resume-1-pager.pdf",
+     kind: OptionKind.VIEWER
   };
   defaultOptions.disablePreferences = {
     value: false,
