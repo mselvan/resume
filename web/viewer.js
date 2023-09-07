@@ -1617,9 +1617,7 @@ function webViewerInitialized() {
   let file;
   const queryString = document.location.search.substring(1);
   const params = (0, _ui_utils.parseQueryString)(queryString);
-  console.log(params.get("minimal"))
-  file = params.get("mode") === "minimal" ? _app_options.AppOptions.get("minimalPdfUrl") : _app_options.AppOptions.get("comprehensivePdfUrl");
-  console.log(file)
+  file = params.get("mode") === "comprehensive" ? _app_options.AppOptions.get("comprehensivePdfUrl") : _app_options.AppOptions.get("minimalPdfUrl");
   validateFileURL(file);
   const fileInput = appConfig.openFileInput;
   fileInput.value = null;
