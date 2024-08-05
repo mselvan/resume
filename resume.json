@@ -1,0 +1,283 @@
+{
+    "meta": {
+        "theme": "professional"
+    },
+    "basics": {
+        "name": "Manimaran Selvan",
+        "label": "Engineering Leader / Software Architect",
+        "image": "https://avatars.githubusercontent.com/u/958821?v=4",
+        "email": "mselvan@belyf.com",
+        "phone": "+32 494 80 63 77",
+        "website": "",
+        "summary": "Experienced Software Engineering Leader with 15 years in software development and 6 years in technical product management. Adept at designing scalable architectures, modernizing legacy systems, and implementing cloud solutions. Proven track record in leading cross-functional teams, mentoring individual contributors, and driving product innovation. Skilled in Agile methodologies, committed to enhancing operational efficiency and product quality.",
+        "location": {
+            "city": "Brussels",
+            "countryCode": "Belgium"
+        },
+        "profiles": [
+            {
+                "network": "LinkedIn",
+                "username": "maniselvan",
+                "url": "https://www.linkedin.com/in/maniselvan"
+            },
+            {
+                "network": "Github",
+                "username": "mselvan",
+                "url": "https://github.com/mselvan"
+            },
+            {
+                "network": "Medium",
+                "username": "belyf",
+                "url": "https://blog.belyf.com/"
+            }
+        ]
+    },
+    "work": [
+        {
+            "name": "Pragya Consulting Services",
+            "position": "Software Engineering Manager",
+            "location": "Brussels, Belgium",
+            "website": "",
+            "startDate": "2024-07-02",
+            "summary": "Remotely from Aug 2023 — managed projects utilizing Agile methodologies and tools such as Jira and Confluence. Provided coaching and mentorship to individual contributors, addressing technical and operational challenges. Engaged in product and architecture discussions, conducted code reviews, and established high-level API contracts.",
+            "highlights": [
+                "Doubled team productivity, increasing project delivery speed by 50% through targeted leadership and mentoring strategies.",
+                "Reduced project delivery times by 20% using Agile methodologies and continuous integration practices.",
+                "Successfully led an elite team of 6 engineers to deliver projects on time and within budget, resulting in increased client satisfaction."
+            ]
+        },
+        {
+            "name": "Trilogy Enterprises",
+            "position": "Technical Product Manager",
+            "location": "Austin, Texas (Remote)",
+            "website": "",
+            "startDate": "2017-08-01",
+            "endDate": "2023-06-30",
+            "summary": "Led cost-saving initiatives, developed CloudFix, and improved work allocation and delivery processes. Co-managed TPMs and developed AWS-based tools for various technical processes.",
+            "highlights": [
+                "Founding member of Central TPM team.",
+                "Achieved $15M savings in 3 months by developing CloudFix, leading to over $100M in cumulative savings for customers.",
+                "Implemented lean software assembly lines for efficient work delivery through well-defined work units and 24/7 operations for a global workforce of over 5K.",
+                "Co-managed 60+ TPMs, preparing for a VP role by working alongside the retiring VP.",
+                "Developed tools for specification ordering, search, ranking, and CTO boot camps using AWS technologies."
+            ]
+        },
+        {
+            "name": "Trilogy Enterprises",
+            "position": "Lead Software Engineer",
+            "location": "Austin, Texas (Remote)",
+            "website": "",
+            "startDate": "2015-01-01",
+            "endDate": "2017-08-01",
+            "summary": "Centralized IT operations, managed senior SREs, automated processes, contributed to tools development, and handled M&A activities",
+            "highlights": [
+                "Centralized IT operations for a global workforce of 5K+, achieving 85% cost savings.",
+                "Coached and managed over 20 senior SREs, enhancing their value delivery by 4x.",
+                "Authored M&A IT transition playbooks, integrating over 15 acquisitions.",
+                "Implemented JIRA workflows and advanced automation, reducing operational overhead by 75%.",
+                "Contributed to the development of VDI2, a web app for deploying AWS services with an audit trail, preceding AWS's comprehensive IAM and compliance features."
+            ]
+        },
+        {
+            "name": "Tissow Technology Ventures",
+            "position": "Technical Co-founder",
+            "location": "Chennai, India",
+            "website": "",
+            "startDate": "2013-10-01",
+            "endDate": "2015-12-31",
+            "summary": "Developed Humingo, replatformed Ticketgoose, and optimized tech operations by switching cloud providers.",
+            "highlights": [
+                "Built Humingo, an e-commerce product discovery and aggregation platform, comprising a distributed crawler and product classifier, in 6 months using Cloudera Hadoop, Apache Solr, Lucene, HDFS, Zookeeper, and Kafka.",
+                "Modernized Ticketgoose, a bus ticket booking platform, reducing operational complexity and improving user experience in 3 months using Springframework.",
+                "Reducing TCO by 50% by switching from AWS to Linode, and later moving back to AWS after the introduction of GP2 volumes."
+            ]
+        },
+        {
+            "name": "Nallan Technology Ventures",
+            "position": "Senior Associate",
+            "location": "Chennai, India",
+            "website": "",
+            "startDate": "2011-12-01",
+            "endDate": "2013-10-01",
+            "summary": "Built Kachyng, a PCI-compliant mobile payments platform.",
+            "highlights": [
+                "Implemented single-click checkout, enhancing user satisfaction by reducing transaction time by 50%.",
+                "Led the PCI compliance initiative, implementing encryption, tokenization, and rigorous security protocols to meet stringent security standards, successfully passing all compliance audits."
+            ]
+        },
+        {
+            "name": "EMRG Software Solutions",
+            "position": "Technical Co-founder",
+            "location": "Chennai, India",
+            "website": "",
+            "startDate": "2011-12-01",
+            "endDate": "2013-10-01",
+            "summary": "Developed two products in the financial information research space.",
+            "highlights": [
+                "Built a 10-member software engineering and SaaS team."
+            ]
+        },
+        {
+            "name": "YuMe",
+            "position": "Systems Engineer & Java Application Developer",
+            "location": "Chennai, India",
+            "website": "",
+            "startDate": "2008-08-01",
+            "endDate": "2010-08-01",
+            "summary": "Managed infrastructure and automated deployments across multiple environments, overseeing production deployments, migrations, and daily DevOps tasks. Conducted R&D in early mobile technologies, developed native apps, and created proof-of-concepts using Google Web Toolkit.",
+            "highlights": [
+                "Founding member of IT Ops team in offshore."
+            ]
+        }
+    ],
+    "education": [
+        {
+            "institution": "Bharathidasan University",
+            "location": "Tiruchirappalli, India",
+            "area": "Computer Science",
+            "studyType": "Bachelors",
+            "startDate": "2005-06-01",
+            "endDate": "2008-06-01",
+            "courses": [
+                "Data Structures & Algorithms",
+                "Database Management Systems",
+                "Cloud Computing"
+            ]
+        }
+    ],
+    "certificates": [
+        {
+            "name": "Aha! Product Management Professional Certificate",
+            "date": "2023-08-15",
+            "issuer": "Aha!",
+            "url": "https://www.linkedin.com/learning/certificates/3584ff4e6ee7e2b8dadcd32c6e4e1ea494992f1c49e4d1b7612ff66c345b9ce5"
+        },
+        {
+            "name": "JavaScript Algorithms and Data Structures",
+            "date": "2023-01-13",
+            "issuer": "freeCodeCamp",
+            "url": "https://freecodecamp.org/certification/mselvan/javascript-algorithms-and-data-structures"
+        }
+    ],
+    "skills": [
+        {
+            "name": "Programming Languages",
+            "level": "",
+            "keywords": [
+                "Java (Advanced)",
+                "Groovy (Advanced)",
+                "Javascript (Intermediate)",
+                "Python (Intermediate)"
+            ]
+        },
+        {
+            "name": "Cloud Providers",
+            "level": "",
+            "keywords": [
+                "AWS (Advanced)",
+                "GCP"
+            ]
+        },
+        {
+            "name": "AWS Services",
+            "level": "",
+            "keywords": [
+                "EC2",
+                "S3",
+                "IAM",
+                "ECS",
+                "EKS",
+                "Fargate",
+                "Lambda",
+                "Amplify",
+                "Cognito",
+                "Cloudwatch",
+                "Cloudtrail",
+                "SNS",
+                "SES",
+                "SQS",
+                "DynamoDB",
+                "OpenSearch",
+                "Quicksight"
+            ]
+        },
+        {
+            "name": "Build & CI/CD",
+            "level": "",
+            "keywords": [
+                "Gradle",
+                "Maven",
+                "Jenkins"
+            ]
+        },
+        {
+            "name": "Databases/Cache",
+            "level": "",
+            "keywords": [
+                "MySQL",
+                "PostgreSQL",
+                "MongoDB",
+                "DynamoDB",
+                "Redis",
+                "ElastiCache",
+                "Memcache"
+            ]
+        },
+        {
+            "name": "Search",
+            "level": "",
+            "keywords": [
+                "Amazon OpenSearch",
+                "ElasticSearch",
+                "Solr",
+                "Lucene"
+            ]
+        },
+        {
+            "name": "Messaging",
+            "level": "",
+            "keywords": [
+                "Kafka",
+                "AWS Messaging"
+            ]
+        },
+        {
+            "name": "Framework/Libraries",
+            "level": "",
+            "keywords": [
+                "Springframework (Advanced)",
+                "React (Intermediate)",
+                "Node.js (Intermediate)",
+                "Playframework"
+            ]
+        },
+        {
+            "name": "Containerization",
+            "level": "",
+            "keywords": [
+                "Docker",
+                "Kubernetes",
+                "EKS",
+                "ECS"
+            ]
+        },
+        {
+            "name": "API / API Tech",
+            "level": "",
+            "keywords": [
+                "REST",
+                "Swagger",
+                "GraphQL"
+            ]
+        },
+        {
+            "name": "Others",
+            "level": "",
+            "keywords": [
+                "Figma",
+                "Lucidchart",
+                "Grafana"
+            ]
+        }
+    ]
+}
