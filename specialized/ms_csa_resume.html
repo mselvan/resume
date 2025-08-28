@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Manimaran Selvan - Software Architect</title>
+        <style>
+        :root {
+        --scale-factor: 0.9; /* CHANGE THIS VALUE TO SCALE EVERYTHING */
+        }
+        * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        }
+        body {
+        font-family: 'Aptos', 'Roboto', 'Arial', sans-serif;
+        line-height: 1.3;
+        color: #2c3e50;
+        background: white;
+        font-size: calc(10pt * var(--scale-factor));
+        }
+        .container {
+        max-width: 8.5in;
+        margin: 0 auto;
+        padding: calc(0.1in * var(--scale-factor));
+        background: white;
+        }
+        .header {
+        text-align: left;
+        margin-bottom: calc(25px * var(--scale-factor));
+        padding-bottom: calc(15px * var(--scale-factor));
+        border-bottom: 3px solid #34495e;
+        }
+        .name {
+        font-size: 280%;
+        font-weight: 700;
+        color: #2c3e50;
+        margin-bottom: calc(6px * var(--scale-factor));
+        letter-spacing: -0.5px;
+        }
+        .title {
+        font-size: 160%;
+        color: #7f8c8d;
+        margin-bottom: calc(15px * var(--scale-factor));
+        font-weight: 400;
+        }
+        .contact-info {
+        display: flex;
+        flex-wrap: wrap;
+        gap: calc(25px * var(--scale-factor));
+        font-size: 100%;
+        }
+        .contact-item {
+        color: #34495e;
+        display: flex;
+        align-items: center;
+        gap: calc(8px * var(--scale-factor));
+        }
+        .contact-item a {
+        color: #34495e;
+        text-decoration: none;
+        }
+        .contact-item a:hover {
+        color: #2c3e50;
+        text-decoration: underline;
+        }
+        .section {
+        margin-bottom: calc(22px * var(--scale-factor));
+        }
+        .section-title {
+        font-size: 130%;
+        font-weight: 700;
+        color: #2c3e50;
+        text-transform: uppercase;
+        letter-spacing: 1.5px;
+        border-bottom: 2px solid #bdc3c7;
+        padding-bottom: calc(6px * var(--scale-factor));
+        margin-bottom: calc(15px * var(--scale-factor));
+        }
+        .summary-text {
+        font-size: 100%;
+        line-height: 1.5;
+        text-align: justify;
+        color: #34495e;
+        margin-bottom: calc(12px * var(--scale-factor));
+        }
+        .skills-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: calc(20px * var(--scale-factor));
+        margin-bottom: calc(15px * var(--scale-factor));
+        }
+        .skill-category h3 {
+        font-size: 110%;
+        font-weight: 600;
+        color: #2c3e50;
+        margin-bottom: calc(8px * var(--scale-factor));
+        padding-bottom: calc(3px * var(--scale-factor));
+        border-bottom: 1px solid #ecf0f1;
+        }
+        .skill-tags {
+        display: flex;
+        flex-wrap: wrap;
+        gap: calc(8px * var(--scale-factor));
+        }
+        .skill-tag {
+        background: #ecf0f1;
+        color: #2c3e50;
+        padding: calc(6px * var(--scale-factor)) calc(12px * var(--scale-factor));
+        border-radius: 15px;
+        font-size: 90%;
+        font-weight: 500;
+        }
+        .skill-tag.primary {
+        background: #3498db;
+        color: white;
+        }
+        .experience-item {
+        margin-bottom: calc(20px * var(--scale-factor));
+        padding-bottom: calc(15px * var(--scale-factor));
+        border-bottom: 1px solid #ecf0f1;
+        }
+        .experience-item:last-child {
+        border-bottom: none;
+        }
+        .job-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin-bottom: calc(6px * var(--scale-factor));
+        }
+        .job-title {
+        font-size: 120%;
+        font-weight: 600;
+        color: #2c3e50;
+        }
+        .job-date {
+        font-size: 100%;
+        color: #000;
+        font-weight: 500;
+        }
+        .company {
+        font-size: 100%;
+        color: #34495e;
+        font-weight: 600;
+        margin-bottom: calc(8px * var(--scale-factor));
+        }
+        .client-info {
+        font-size: 90%;
+        color: #000;
+        margin-bottom: calc(12px * var(--scale-factor));
+        padding: calc(6px * var(--scale-factor)) calc(10px * var(--scale-factor));
+        background: #f8f9fa;
+        border-left: 3px solid #3498db;
+        border-radius: 3px;
+        }
+        .client-name {
+        font-weight: 600;
+        color: #2c3e50;
+        }
+        .achievements {
+        list-style: none;
+        padding: 0;
+        }
+        .achievements li {
+        margin-bottom: calc(8px * var(--scale-factor));
+        padding-left: calc(20px * var(--scale-factor));
+        position: relative;
+        font-size: 90%;
+        line-height: 1.4;
+        text-align: justify;
+        }
+        .achievements li::before {
+        content: '▶';
+        position: absolute;
+        left: 0;
+        color: #3498db;
+        font-size: 80%;
+        top: calc(2px * var(--scale-factor));
+        }
+        .highlight {
+        font-weight: 600;
+        color: #2c3e50;
+        background: #fff3cd;
+        padding: calc(1px * var(--scale-factor)) calc(3px * var(--scale-factor));
+        border-radius: 2px;
+        }
+        .cert-item, .education-item {
+        margin-bottom: calc(12px * var(--scale-factor));
+        padding: calc(10px * var(--scale-factor));
+        background: #f8f9fa;
+        border-radius: 5px;
+        border-left: 4px solid #3498db;
+        }
+        .cert-number {
+        font-style: italic;
+        color: #7f8c8d;
+        font-size: 90%;
+        margin-top: calc(5px * var(--scale-factor));
+        }
+        .languages {
+        display: flex;
+        gap: calc(30px * var(--scale-factor));
+        flex-wrap: wrap;
+        }
+        .language-item {
+        text-align: center;
+        }
+        .language-name {
+        font-weight: 600;
+        color: #2c3e50;
+        margin-bottom: calc(5px * var(--scale-factor));
+        }
+        .language-level {
+        font-size: 90%;
+        color: #7f8c8d;
+        }
+        .dots {
+        display: flex;
+        gap: calc(3px * var(--scale-factor));
+        justify-content: center;
+        margin-top: calc(5px * var(--scale-factor));
+        }
+        .dot {
+        width: calc(8px * var(--scale-factor));
+        height: calc(8px * var(--scale-factor));
+        border-radius: 50%;
+        background: #ecf0f1;
+        }
+        .dot.filled {
+        background: #3498db;
+        }
+        @media print {
+        :root {
+        --scale-factor: 0.75; /* Smaller for print - adjust this for PDF */
+        }
+        
+        .skills-grid {
+        grid-template-columns: 1fr;
+        gap: calc(15px * var(--scale-factor));
+        }
+        }
+        @page {
+        size: A4;
+        margin: 0.3in;
+        }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="header">
+                <h1 class="name">Manimaran Selvan</h1>
+                <h2 class="title">Cloud Software Architect | Engineering Leader</h2>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <span>📍</span>
+                        <span>Brussels, Belgium</span>
+                    </div>
+                    <div class="contact-item">
+                        <span>📧</span>
+                        <a href="mailto:mselvan@belyf.com">mselvan@belyf.com</a>
+                    </div>
+                    <div class="contact-item">
+                        <span>📱</span>
+                        <a href="tel:+32494806377">+32 494 80 63 77</a>
+                    </div>
+                    <div class="contact-item">
+                        <span>🔗</span>
+                        <a href="https://linkedin.com/in/maniselvan">linkedin.com/in/maniselvan</a>
+                    </div>
+                    <div class="contact-item">
+                        <span>🔗</span>
+                        <a href="https://github.com/mselvan">github.com/mselvan</a>
+                    </div>
+                </div>
+            </div>
+            <div class="section">
+                <h2 class="section-title">Summary</h2>
+                <div class="summary-text">
+                    Impact-driven Software Architect with <strong>17+ years</strong> of experience in designing scalable cloud-native architectures, integrating AI solutions, and optimizing systems for performance and reliability. Proven track record in modernizing legacy systems, mentoring high-performing teams, and delivering innovative technologies that drive significant business value. Committed to fostering operational excellence and driving innovation for organizational success.
+                </div>
+            </div>
+            <div class="section">
+                <h2 class="section-title">Skills</h2>
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <h3>Programming Languages</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Java</span>
+                            <span class="skill-tag">Groovy</span>
+                            <span class="skill-tag">Python</span>
+                            <span class="skill-tag">JavaScript</span>
+                            <span class="skill-tag">TypeScript</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Frameworks & Libraries</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Spring</span>
+                            <span class="skill-tag">Spring Boot</span>
+                            <span class="skill-tag">Node.js</span>
+                            <span class="skill-tag">Angular</span>
+                            <span class="skill-tag">React</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Cloud Providers</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">AWS</span>
+                            <span class="skill-tag">GCP</span>
+                            <span class="skill-tag">Azure</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Containerization & DevOps</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Docker</span>
+                            <span class="skill-tag">Kubernetes</span>
+                            <span class="skill-tag">EKS</span>
+                            <span class="skill-tag">ECS</span>
+                            <span class="skill-tag">GKE</span>
+                            <span class="skill-tag">CI/CD</span>
+                            <span class="skill-tag">Terraform</span>
+                            <span class="skill-tag">CloudFormation</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Data & Analytics</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">BigQuery</span>
+                            <span class="skill-tag">Pub/Sub</span>
+                            <span class="skill-tag">Dataflow</span>
+                            <span class="skill-tag">MySQL</span>
+                            <span class="skill-tag">PostgreSQL</span>
+                            <span class="skill-tag">MongoDB</span>
+                            <span class="skill-tag">DynamoDB</span>
+                            <span class="skill-tag">Redis</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Monitoring & Observability</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Cloud Monitoring</span>
+                            <span class="skill-tag">SignalFx / Splunk Observability</span>
+                            <span class="skill-tag">Grafana</span>
+                            <span class="skill-tag">Prometheus</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Messaging & API</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Kafka</span>
+                            <span class="skill-tag">AWS Messaging</span>
+                            <span class="skill-tag">REST</span>
+                            <span class="skill-tag">GraphQL</span>
+                            <span class="skill-tag">Swagger</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Generative AI & Media AI</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">LangChain</span>
+                            <span class="skill-tag">LlamaIndex</span>
+                            <span class="skill-tag">GPT-4 / GPT-4o APIs</span>
+                            <span class="skill-tag">Azure Video Indexer</span>
+                            <span class="skill-tag">Vertex AI</span>
+                            <span class="skill-tag">Bedrock</span>
+                            <span class="skill-tag">FAISS</span>
+                            <span class="skill-tag">RAG</span>
+                            <span class="skill-tag">Fine-tuning</span>
+                            <span class="skill-tag">Prompt Engineering</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Architecture & Modeling</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">TOGAF</span>
+                            <span class="skill-tag">ArchiMate</span>
+                            <span class="skill-tag">UML</span>
+                            <span class="skill-tag">C4 Models</span>
+                            <span class="skill-tag">DDD</span>
+                            <span class="skill-tag">Microservices</span>
+                            <span class="skill-tag">Enterprise Architect</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="section">
+                    <h2 class="section-title">Certification</h2>
+                    <div class="cert-item">
+                        <div class="job-header">
+                            <div class="job-title">AWS Certified Solutions Architect - Professional</div>
+                            <div class="job-date">Sep 27, 2024 — Sep 27, 2027</div>
+                        </div>
+                        <div class="cert-number">Validation Number: <a href="https://cp.certmetrics.com/amazon/en/public/verify/credential/e478210227fd46fdaccc48b5e403dba0">e478210227fd46fdaccc48b5e403dba0</a></div>
+                    </div>
+                </div>
+                <div class="section">
+                    <h2 class="section-title">Experience</h2>
+                    
+                    <div class="experience-item">
+                        <div class="job-header">
+                            <div class="job-title">Cloud Solutions Architect</div>
+                            <div class="job-date">January 2025 - Present</div>
+                        </div>
+                        <div class="company">Al Jazeera Media Network | Brussels, Belgium (Remote)</div>
+                        <div class="client-info">
+                            Leading cloud architecture and digital transformation initiatives for one of the world's largest news organizations
+                        </div>
+                        <ul class="achievements">
+                            <li>Architected multi-region cloud infrastructure on <span class="highlight">AWS, Azure, and GCP</span>, ensuring high availability and scalability for <span class="highlight">millions of daily news consumers</span> worldwide.</li>
+                            <li>Modernized <span class="highlight">legacy media platforms</span> by migrating from on-premises to cloud-native solutions, improving system reliability by <span class="highlight">40%</span> and reducing operational costs by <span class="highlight">30%</span>.</li>
+                            <li>Established <span class="highlight">DevOps standards</span> and CI/CD pipelines, cutting deployment time from days to hours and enabling <span class="highlight">faster release cycles</span> for newsroom applications.</li>
+                            <li>Developed an <span class="highlight">Observability Playbook</span> and led <span class="highlight">Biweekly, Quarterly, and Annual QoS reviews</span>, increasing monitoring accuracy to <span class="highlight">95%</span> and improving incident response times by <span class="highlight">25%</span>.</li>
+                            <li>Partnered with the <span class="highlight">JaWaCloud (Al Jazeera Data Warehouse) team</span> to migrate critical ETL Jobs from <span class="highlight">Cloud Run Services (Functions) to Cloud Run Jobs</span>, which loads data to <span class="highlight">BigQuery</span> for data pipelines and publishing <span class="highlight">Cloud Monitoring custom metrics</span> to enhance observability and cost governance.</li>
+                            <li>Built a <span class="highlight">multi-cloud Video AI platform</span> using Azure Video Indexer, GPT-4o APIs, Google Vertex AI, and Pub/Sub, processing <span class="highlight">thousands of video hours</span> for transcription and translation.</li>
+                        </ul>
+                    </div>
+                    <div class="experience-item">
+                        <div class="job-header">
+                            <div class="job-title">IT Consultant (Cloud Software Architect)</div>
+                            <div class="job-date">July 2023 - Present</div>
+                        </div>
+                        <div class="company">Pragya Consulting Services | Brussels, Belgium</div>
+                        <div class="client-info">
+                            Delivered innovative cloud and AI solutions, serving as a hands-on architect and technical expert
+                        </div>
+                        <ul class="achievements">
+                            <li>Designed and deployed scalable, <span class="highlight">cloud-native architectures on AWS</span>, optimizing performance, fault tolerance, and cost-efficiency for diverse enterprise use cases</li>
+                            <li>Developed <span class="highlight">AI-driven solutions utilizing LLaMA models</span>, integrating them with custom retrieval-augmented generation (RAG) pipelines to enable intelligent, context-aware decision-making</li>
+                            <li>Enhanced team productivity by introducing streamlined <span class="highlight">CI/CD workflows</span> and ensuring alignment with Agile methodologies</li>
+                            <li>Conducted code reviews, architecture validations, and cloud cost audits to ensure robust designs and operational efficiency</li>
+                        </ul>
+                    </div>
+                    <div class="experience-item">
+                        <div class="job-header">
+                            <div class="job-title">Technical Product Manager (Cloud Software Architect)</div>
+                            <div class="job-date">August 2017 - June 2023</div>
+                        </div>
+                        <div class="company">Trilogy Enterprises | Austin, Texas (Remote)</div>
+                        <div class="client-info">
+                            Led cost-saving initiatives, architected and developed CloudFix, and improved work allocation and delivery processes
+                        </div>
+                        <ul class="achievements">
+                            <li>Achieved <span class="highlight">$15M savings in 3 months</span> by developing CloudFix, leading to over <span class="highlight">$100M in cumulative savings</span> for customers</li>
+                            <li>Designed and developed an <span class="highlight">AI-powered chatbot for CRM</span>, leveraging LangChain, GPT-3.5 API, and RAG to deliver intelligent, context-aware conversational capabilities. Achieved a <span class="highlight">75% improvement in customer interaction efficiency</span></li>
+                            <li>Implemented <span class="highlight">lean software assembly lines</span> for efficient work delivery through well-defined work units and 24/7 operations for a global workforce of over 5K</li>
+                            <li>Co-managed <span class="highlight">60+ TPMs</span>, preparing for a VP role by working alongside the retiring VP</li>
+                            <li>Developed tools for specification ordering, search, ranking, and CTO boot camps using AWS technologies, reducing <span class="highlight">operational overhead by 75%</span></li>
+                        </ul>
+                    </div>
+                    <div class="experience-item">
+                        <div class="job-header">
+                            <div class="job-title">Lead Cloud Software Engineer</div>
+                            <div class="job-date">January 2015 - August 2017</div>
+                        </div>
+                        <div class="company">Trilogy Enterprises | Austin, Texas (Remote)</div>
+                        <div class="client-info">
+                            Centralized IT operations, managed senior SREs, automated processes, and handled M&A activities
+                        </div>
+                        <ul class="achievements">
+                            <li>Centralized IT operations for a global workforce of 5K+, achieving <span class="highlight">85% cost savings</span></li>
+                            <li>Coached and managed <span class="highlight">20+ senior SREs</span>, enhancing their productivity by 4x</li>
+                            <li>Authored M&A IT transition playbooks, integrating over <span class="highlight">15 acquisitions</span></li>
+                            <li>Implemented JIRA workflows and advanced automation, reducing <span class="highlight">operational overhead by 75%</span></li>
+                            <li>Contributed to the development of VDI2, a web app for deploying AWS services with an audit trail, preceding AWS's comprehensive IAM and compliance features</li>
+                        </ul>
+                    </div>
+                    <div class="experience-item">
+                        <div class="job-header">
+                            <div class="job-title">Technical Co-founder</div>
+                            <div class="job-date">October 2013 - December 2014</div>
+                        </div>
+                        <div class="company">Tissow Technology Ventures | Chennai, India</div>
+                        <div class="client-info">
+                            Architected and developed Humingo, replatformed Ticketgoose, and optimized tech operations
+                        </div>
+                        <ul class="achievements">
+                            <li>Built Humingo, an <span class="highlight">e-commerce product discovery and aggregation platform</span>, comprising a distributed crawler and product classifier, in 6 months using Cloudera Hadoop, Apache Solr, Lucene, HDFS, Zookeeper, and Kafka</li>
+                            <li>Modernized Ticketgoose, a bus ticket booking platform, reducing operational complexity and improving user experience in 3 months using Spring framework</li>
+                            <li>Reduced TCO by <span class="highlight">50%</span> by switching from AWS to Linode, and later moving back to AWS after the introduction of GP2 volumes</li>
+                        </ul>
+                    </div>
+                    <div class="experience-item">
+                        <div class="job-header">
+                            <div class="job-title">Senior Associate</div>
+                            <div class="job-date">December 2011 - October 2013</div>
+                        </div>
+                        <div class="company">Nallan Technology Ventures | Chennai, India</div>
+                        <div class="client-info">
+                            Architected and built Kachyng, a PCI-compliant mobile payments platform
+                        </div>
+                        <ul class="achievements">
+                            <li>Implemented <span class="highlight">single-click checkout</span>, enhancing UX by reducing transaction time by 50%</li>
+                            <li>Led the <span class="highlight">PCI compliance initiative</span>, implementing encryption, tokenization, and rigorous security protocols to meet stringent security standards, successfully passing all compliance audits</li>
+                        </ul>
+                    </div>
+                    <div class="experience-item">
+                        <div class="job-header">
+                            <div class="job-title">Technical Co-founder</div>
+                            <div class="job-date">August 2010 - December 2011</div>
+                        </div>
+                        <div class="company">EMRG Software Solutions | Chennai, India</div>
+                        <div class="client-info">
+                            Led a 10-member team, architected, and developed 2 products in the financial information research space
+                        </div>
+                        <ul class="achievements">
+                            <li>Architected software platforms to <span class="highlight">ETL</span> market data. Built Stock Screener, Portfolio Manager, and Thought Sharing Platform</li>
+                        </ul>
+                    </div>
+                    <div class="experience-item">
+                        <div class="job-header">
+                            <div class="job-title">Systems Engineer & Java Application Developer</div>
+                            <div class="job-date">August 2008 - August 2010</div>
+                        </div>
+                        <div class="company">YuMe | Chennai, India</div>
+                        <div class="client-info">
+                            Managed infrastructure and automated deployments across 6 environments, overseeing production deployments, migrations, and daily DevOps tasks
+                        </div>
+                        <ul class="achievements">
+                            <li>Conducted R&D in early mobile technologies, developed native apps, and created proof-of-concepts using <span class="highlight">Google Web Toolkit</span></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="section">
+                    <h2 class="section-title">Education</h2>
+                    <div class="education-item">
+                        <div class="job-header">
+                            <div class="job-title">B.Sc Computer Science</div>
+                            <div class="job-date">2008</div>
+                        </div>
+                        <div class="company">Bharathidasan University | Trichy, India</div>
+                    </div>
+                </div>
+            </div>
+        </body>
+    </html>
