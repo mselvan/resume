@@ -3213,7 +3213,7 @@ const defaultOptions = {
     kind: OptionKind.VIEWER
   };
   defaultOptions.minimalPdfUrl = {
-     value: "../ms-resume-1-pager.pdf",
+     value: "../ms-1pager.pdf",
      kind: OptionKind.VIEWER
   };
   defaultOptions.disablePreferences = {
